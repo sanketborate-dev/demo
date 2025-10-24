@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web Application</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/unused.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 style="color: #ff0000; font-size: 32px; margin: 10px;">Demo App</h1>
+            <nav class="nav">
+                <ul style="list-style: none; display: flex;">
+                    <li><a href="#" style="color: blue; padding: 5px;">Home</a></li>
+                    <li><a href="#" style="color: blue; padding: 5px;">About</a></li>
+                    <li><a href="#" style="color: blue; padding: 5px;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" style="background-color: #ccc; padding: 50px; text-align: center;">
+            <h2 style="color: #333; font-size: 48px;">Welcome to Our Demo</h2>
+            <p style="font-size: 18px; color: #666;">This is a sample application</p>
+            <button class="btn" style="background: red; color: white; padding: 10px 20px; border: none;">Get Started</button>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="card">
+                    <h3 style="color: green;">Feature 1</h3>
+                    <p style="font-size: 14px;">Some description here</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: green;">Feature 2</h3>
+                    <p style="font-size: 14px;">Some description here</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: green;">Feature 3</h3>
+                    <p style="font-size: 14px;">Some description here</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <form class="contact-form">
+                    <h2 style="color: #000;">Contact Us</h2>
+                    <input type="text" placeholder="Name" style="padding: 8px; margin: 5px; width: 200px;">
+                    <input type="email" placeholder="Email" style="padding: 8px; margin: 5px; width: 200px;">
+                    <textarea placeholder="Message" style="padding: 8px; margin: 5px; width: 200px;"></textarea>
+                    <button type="submit" style="background: blue; color: white; padding: 10px;">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background-color: #222; color: white; padding: 20px; text-align: center;">
+        <p>&copy; 2025 Demo App. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" style="color: red; font-size: 30px;">&times;</span>
+            <h2 style="color: black;">Modal Title</h2>
+            <p>Modal content goes here</p>
+        </div>
+    </div>
+</body>
+</html>

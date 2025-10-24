@@ -1,0 +1,73 @@
+/* Components stylesheet with duplicate and conflicting styles */
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Duplicate button style with different values */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.card {
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Conflicting card padding */
+.card {
+    padding: 20px;
+}
+
+/* Modal styles - duplicated from main.css */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+/* Form elements - no consistency */
+input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    border: 2px solid #999;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Random conflicting styles */
+h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #444;
+}
+
+/* Unused component styles */
+.sidebar {
+    width: 250px;
+    background: #f0f0f0;
+}
+
+.widget {
+    padding: 15px;
+    margin-bottom: 20px;
+}
