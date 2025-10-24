@@ -6,69 +6,70 @@
     <title>Demo Web Application</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/unused.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 style="color: #ff0000; font-size: 32px; margin: 10px;">Demo App</h1>
+            <h1 class="header__title">Demo App</h1>
             <nav class="nav">
-                <ul style="list-style: none; display: flex;">
-                    <li><a href="#" style="color: blue; padding: 5px;">Home</a></li>
-                    <li><a href="#" style="color: blue; padding: 5px;">About</a></li>
-                    <li><a href="#" style="color: blue; padding: 5px;">Contact</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="hero" style="background-color: #ccc; padding: 50px; text-align: center;">
-            <h2 style="color: #333; font-size: 48px;">Welcome to Our Demo</h2>
-            <p style="font-size: 18px; color: #666;">This is a sample application</p>
-            <button class="btn" style="background: red; color: white; padding: 10px 20px; border: none;">Get Started</button>
+        <section class="hero">
+            <h2 class="hero__title">Welcome to Our Demo</h2>
+            <p class="hero__description">This is a sample application demonstrating clean CSS practices</p>
+            <button class="btn">Get Started</button>
         </section>
 
         <section class="features">
             <div class="container">
-                <div class="card">
-                    <h3 style="color: green;">Feature 1</h3>
-                    <p style="font-size: 14px;">Some description here</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: green;">Feature 2</h3>
-                    <p style="font-size: 14px;">Some description here</p>
-                </div>
-                <div class="card">
-                    <h3 style="color: green;">Feature 3</h3>
-                    <p style="font-size: 14px;">Some description here</p>
+                <div class="features__container">
+                    <div class="card">
+                        <h3 class="card__title">Feature 1</h3>
+                        <p class="card__description">Responsive design that works on all devices</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Feature 2</h3>
+                        <p class="card__description">Consistent styling with CSS variables</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Feature 3</h3>
+                        <p class="card__description">BEM naming convention for maintainability</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="form-section">
+        <section id="contact" class="form-section">
             <div class="container">
-                <form class="contact-form">
-                    <h2 style="color: #000;">Contact Us</h2>
-                    <input type="text" placeholder="Name" style="padding: 8px; margin: 5px; width: 200px;">
-                    <input type="email" placeholder="Email" style="padding: 8px; margin: 5px; width: 200px;">
-                    <textarea placeholder="Message" style="padding: 8px; margin: 5px; width: 200px;"></textarea>
-                    <button type="submit" style="background: blue; color: white; padding: 10px;">Submit</button>
+                <form class="form">
+                    <h2 class="form__title">Contact Us</h2>
+                    <input type="text" placeholder="Name" class="form__input" required>
+                    <input type="email" placeholder="Email" class="form__input" required>
+                    <textarea placeholder="Message" class="form__textarea" required></textarea>
+                    <button type="submit" class="btn form__button">Submit</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="footer" style="background-color: #222; color: white; padding: 20px; text-align: center;">
-        <p>&copy; 2025 Demo App. All rights reserved.</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Demo App. All rights reserved.</p>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal Example -->
     <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" style="color: red; font-size: 30px;">&times;</span>
-            <h2 style="color: black;">Modal Title</h2>
-            <p>Modal content goes here</p>
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2 class="modal__title">Modal Title</h2>
+            <p>This modal demonstrates proper styling and accessibility features.</p>
         </div>
     </div>
 </body>
