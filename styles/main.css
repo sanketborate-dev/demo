@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Main Stylesheet - Demo Application
+   Clean, maintainable CSS with BEM naming convention
+   ========================================================================== */
+
+/* CSS Variables for consistent theming */
+:root {
+    /* Colors */
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-danger: #dc3545;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-bg: #ffffff;
+    --color-bg-light: #f5f5f5;
+    --color-border: #dddddd;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Typography */
+    --font-family-base: Arial, Helvetica, sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 32px;
+    --line-height-base: 1.6;
+    
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    
+    /* Layout */
+    --container-max-width: 1200px;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 8px var(--color-shadow);
+    --transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+
+/* Container - Responsive */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Header */
+.header {
+    background-color: var(--color-bg);
+    box-shadow: var(--box-shadow);
+    padding: var(--spacing-sm) 0;
+}
+
+.header__title {
+    color: var(--color-primary);
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Navigation */
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.nav__item {
+    margin: 0;
+}
+
+.nav__link {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--spacing-xs);
+    transition: var(--transition);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: var(--color-primary-dark);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Main Content */
+.main-content {
+    min-height: calc(100vh - 200px);
+}
+
+/* ==========================================================================
+   Section Components
+   ========================================================================== */
+
+/* Hero Section */
+.hero {
+    background-color: var(--color-bg-light);
+    padding: var(--spacing-xl) var(--spacing-sm);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero__description {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Features Section */
+.features {
+    padding: var(--spacing-xl) 0;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.footer__text {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .header__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .nav__list {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .hero__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .features__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .hero {
+        padding: var(--spacing-md) var(--spacing-xs);
+    }
+}

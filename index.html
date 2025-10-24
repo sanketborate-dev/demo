@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Web Application</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Demo App</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h2 class="hero__title">Welcome to Our Demo</h2>
+            <p class="hero__description">This is a sample application demonstrating clean CSS practices</p>
+            <button class="btn">Get Started</button>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features__container">
+                    <div class="card">
+                        <h3 class="card__title">Feature 1</h3>
+                        <p class="card__description">Responsive design that works on all devices</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Feature 2</h3>
+                        <p class="card__description">Consistent styling with CSS variables</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">Feature 3</h3>
+                        <p class="card__description">BEM naming convention for maintainability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="form-section">
+            <div class="container">
+                <form class="form">
+                    <h2 class="form__title">Contact Us</h2>
+                    <input type="text" placeholder="Name" class="form__input" required>
+                    <input type="email" placeholder="Email" class="form__input" required>
+                    <textarea placeholder="Message" class="form__textarea" required></textarea>
+                    <button type="submit" class="btn form__button">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Demo App. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Example -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2 class="modal__title">Modal Title</h2>
+            <p>This modal demonstrates proper styling and accessibility features.</p>
+        </div>
+    </div>
+</body>
+</html>
